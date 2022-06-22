@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native'
 const  styles = StyleSheet.create({
     textBox: {
         position: 'absolute',
-        top: 10,
+        top: 100 / 2,
         shadowColor: '#eee',
         backgroundColor: "#fff",
         shadowOffset: {width: -2, height: 4},
@@ -21,6 +21,8 @@ const  styles = StyleSheet.create({
       color: "#070f6e",
       fontSize: 30,
       fontWeight: 'bold',
+      padding: 2.5,
+      userSelect: 'none'
     }
   })
 
