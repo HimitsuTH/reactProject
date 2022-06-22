@@ -17,13 +17,11 @@ const App = () => {
 
           <Logo/>
           <View style={styles.boxColor}>
-            <Text style={styles.textStyles}>Hello test 123</Text>
-            <Text style={styles.textStyles}>Hello test 123</Text>
-            <Text style={styles.textStyles}>Hello test 123</Text>
-            <Text style={styles.textStyles}>Hello test 123</Text>
-            <Text style={styles.textStyles}>Hello test 123</Text>
+            <Text style={[styles.textStyles, styles.Title]}>Input Something</Text>
+            <Text style={styles.textStyles}>{name}</Text>
             <Text style={[styles.textStyles , styles.warning]}>This is your first app.</Text>
-            <TextInput  onChangeText={onChange} placeholder="Enter something...." value={name}/>
+            <TextInput  style={styles.input}onChangeText={onChange} placeholder="Enter something...." value={name}/>
+  
           </View>
  
     </View>

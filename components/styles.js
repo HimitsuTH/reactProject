@@ -25,6 +25,17 @@ const  styles = StyleSheet.create({
     },
     warning: {
       color: '#f33'
+    },
+    input: {
+      padding: 10,
+      borderColor: '#333',
+      borderWidth: 1,
+      borderRadius: 10,
+    
+    },
+    Title: {
+      fontSize: 24,
+      textTransform: 'uppercase',
     }
   })
 
