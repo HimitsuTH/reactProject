@@ -7,7 +7,7 @@ const App = () => {
   };
   return (
     <View style={styles.container}>
-      <Text style={{fontSize: 24, color: '#fff'}}>Button Example</Text>
+      <Text style={{fontSize: 48, color: '#fff', marginBottom: 20}}>Button Example</Text>
       <Button title="Click Me" onPress={showData} color="#070f6e" />
     </View>
   );
