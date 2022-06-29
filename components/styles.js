@@ -36,7 +36,13 @@ const  styles = StyleSheet.create({
     Title: {
       fontSize: 24,
       textTransform: 'uppercase'
-    }
+    },
+    button: {
+      marginTop: 15,
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+    },  
   })
 
 

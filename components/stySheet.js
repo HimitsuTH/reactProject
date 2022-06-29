@@ -1,9 +1,14 @@
 import { StyleSheet } from 'react-native'
 
+
+
+
+
 const  styles = StyleSheet.create({
     textBox: {
         position: 'absolute',
         top: 100 / 2,
+        left: 10,
         shadowColor: '#eee',
         backgroundColor: "#fff",
         shadowOffset: {width: -2, height: 4},
@@ -26,6 +31,6 @@ const  styles = StyleSheet.create({
     }
   })
 
-
+  //  import to Logo 
   export default styles
  
