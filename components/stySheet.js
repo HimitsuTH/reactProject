@@ -6,9 +6,10 @@ import { StyleSheet } from 'react-native'
 
 const  styles = StyleSheet.create({
     textBox: {
-        position: 'absolute',
-        top: 100 / 2,
-        left: 10,
+        // position: 'absolute',
+        // top: 100 / 2,
+        // left: 10,
+        margin: 50,
         shadowColor: '#eee',
         backgroundColor: "#fff",
         shadowOffset: {width: -2, height: 4},

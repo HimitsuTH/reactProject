@@ -9,7 +9,6 @@ const Logo = () => {
   const [isTHs, setIsTHs] = useState(true);
 
   const checkThai = () => {
-    alert("Change!!!");
     setIsTHs(!isTHs);
   };
 
