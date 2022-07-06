@@ -4,7 +4,6 @@ import styles from "./stySheet";
 const Logo = () => {
   const textLogo = "Thai-NichiInstitute of Technology";
 
-  const isTH = true;
 
   const [isTHs, setIsTHs] = useState(true);
 
