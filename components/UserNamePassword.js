@@ -6,16 +6,27 @@ const UserNamePassword = () => {
   const [password, setPassword] = useState("");
 
 
-    const showAlert = ()=> {
-      //run in Web Browser
-      if (!email) alert("Please Enter Email");
-      else if (!password) alert("Please Enter Password");
-      else alert(`Email : ${email}\n Password : ${password}`);
-
-     
+ 
+  const  checkTextInput = () => {
+    if(!email.trim()){
+      alert('Please Enter Email');
+      return;
+    } else if(!password) {
+      alert("Please Enter Password");
+    } else {
+      // alert(`Email  :  ${email}\nPassword :  ${password}`);
+      alert('Success')
     }
+  }
 
 
+    // const showAlert = ()=> {
+
+    //   if (!email) alert("Please Enter Email");
+    //   else if (!password) alert("Please Enter Password");
+    //   else alert(`Email : ${email}\n Password : ${password}`);
+  
+    // }
 
   return (
     <View
@@ -42,7 +53,7 @@ const UserNamePassword = () => {
         />
 
         <View style={{ marginTop: 15 }}>
-          <Button onPress={showAlert} title="Submit" color="#333" />
+          <Button onPress={checkTextInput} title="Submit" color="#333" />
         </View>
       </View>
     </View>

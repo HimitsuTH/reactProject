@@ -1,39 +1,16 @@
-import { StyleSheet,View, Text, TextInput} from 'react-native'
-import React,{useState} from 'react'
-import Logo from './components/Logo'
-import User from './components/User'
-import UserNamePassword from './components/UserNamePassword'
-import MyCustomTextWith from './components/MyCustomTextWith'
-import Count from './components/Count'
-import LotsOfGreetings from './components/LotsOfGreetings'
-import InputTextEX2 from './components/InputTextEX2'
-
-
+import { View, Text, Image} from 'react-native'
+import React from 'react'
 
 const App = () => {
-  
   return (
-    <View style={styles.container}>
-      {/* <Logo/> */}
-      {/* <User/> */}
-      {/* <LotsOfGreetings/> */}
-      {/* <MyCustomTextWith/> */}
-      {/* <Count num={2} title="Click"/> */}
-      {/* <InputTextEX2/> */}
-      <UserNamePassword />
+    <View>
+      <Text>App</Text>
+      <Image
+        source={{url: 'https://images.unsplash.com/photo-1655312106151-80d0b5551b4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'}}
+        style={{width: 200, height: 200}}
+      />
     </View>
-  );
+  )
 }
 
 export default App
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    backgroundColor: "#fff",
-    height: 500,
-    padding: 10,
-  },
-
-});
