@@ -6,20 +6,22 @@ const UserNamePassword = () => {
   const [password, setPassword] = useState("");
 
 
- 
+  // งานใหม่
   const  checkTextInput = () => {
-    if(!email.trim()){
-      alert('Please Enter Email');
-      return;
-    } else if(!password) {
-      alert("Please Enter Password");
-    } else {
-      // alert(`Email  :  ${email}\nPassword :  ${password}`);
-      alert('Success')
-    }
+    // if(!email.trim()){
+    //   alert('Please Enter Email');
+    //   return;
+    // } else if(!password) {
+    //   alert("Please Enter Password");
+    // } else {
+    //   alert('Success')
+    // }
+    !email.trim() ? alert('Please Enter Email') 
+    :!password ? alert('Please Enter Password') 
+    :alert('Success')
   }
-
-
+   
+    // งานเก่า
     // const showAlert = ()=> {
 
     //   if (!email) alert("Please Enter Email");
