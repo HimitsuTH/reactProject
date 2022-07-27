@@ -1,37 +1,44 @@
 import { StyleSheet, Text, View, Button } from "react-native";
 import React, { useState } from "react";
 
-const ModalPractice = () => {
+const ModalTest = () => {
   const [modal, setModal] = useState(true);
+  const colorName = {
+    title: "closeSwitch",
+  };
+
   return modal ? (
     <View style={styles.container}>
       <View style={styles.modalView}>
         <Text style={styles.textSty}>คุณลืมปิดไฟในห้อง!!!</Text>
         <Button
           title="กรุณากดปุ่มเพื่อปิดไฟ"
-          color="#F194FF"
-          onPress={() => setModal(false)}
+          color="#b40000"
+          onPress={() => setModal(!modal)}
         />
       </View>
     </View>
   ) : (
-    <View style={styles.container}>
+    <View style={[styles.container, styles[colorName.title]]}>
       <View>
-        <Text style={styles.textSty}>ไฟในห้องปิดอยู่</Text>
+        <Text style={[styles.textColorWhite, styles.textSty]}>
+          ไฟในห้องปิดอยู่
+        </Text>
         <Button
           title="กรุณากดปุ่มเพื่อเปิดไฟอีกครั้ง"
           color="#2196F3"
-          onPress={() => setModal(true)}
+          onPress={() => setModal(!modal)}
         />
       </View>
     </View>
   );
 };
 
-export default ModalPractice;
+export default ModalTest;
 
 const styles = StyleSheet.create({
   container: {
+  
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
@@ -55,5 +62,12 @@ const styles = StyleSheet.create({
   textSty: {
     textAlign: "center",
     marginBottom: 10,
+  },
+  textColorWhite: {
+    color: "#fff",
+  },
+
+  closeSwitch: {
+    backgroundColor: "#333",
   },
 });
