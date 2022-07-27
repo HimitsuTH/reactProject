@@ -1,8 +1,6 @@
 import { StyleSheet, Text, View, TouchableOpacity, Image } from "react-native";
 import React from "react";
 
-const Separtor = () => <View style={styles.buttonIconSepartorStyle} />;
-
 const TouchablePractice = () => {
   return (
     <View style={styles.container}>
@@ -16,7 +14,7 @@ const TouchablePractice = () => {
                   style={styles.butttonImageIconStyle}
                 />
               </View>
-              <Separtor />
+              <View style={styles.buttonIconSepartorStyle} />
               <Text style={styles.buttonTextStyle}>Login Using Facebook</Text>
             </View>
           </TouchableOpacity>
@@ -30,7 +28,7 @@ const TouchablePractice = () => {
                   style={styles.butttonImageIconStyle}
                 />
               </View>
-              <Separtor />
+              <View style={styles.buttonIconSepartorStyle} />
               <Text style={styles.buttonTextStyle}>
                 Login Using Google Plusk
               </Text>
