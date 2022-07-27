@@ -5,11 +5,14 @@ import {
   Modal,
   SafeAreaView,
   Button,
+  Alert
 } from "react-native";
 import React, { useState } from "react";
 
 const ModalPratice = () => {
   const [showModal, setShowModal] = useState(false);
+
+  
 
   return (
     <SafeAreaView style={{flex: 1 , justifyContent: 'center', alignItems: 'center'}}>
