@@ -1,38 +1,42 @@
 import { StyleSheet, Text, View, TouchableOpacity, Image } from "react-native";
 import React from "react";
 
-const Separtor = () => <View style={styles.buttonIconSepartorStyle}/>;
+const Separtor = () => <View style={styles.buttonIconSepartorStyle} />;
 
 const TouchablePractice = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.buttonContainer}>
-        <TouchableOpacity>
-          <View style={styles.buttonFacebookStyle}>
-            <View>
-              <Image
-                source={require("../assets/facebook.png")}
-                style={styles.butttonImageIconStyle}
-              />
+      <View style={styles.ContainerSize}>
+        <View>
+          <TouchableOpacity>
+            <View style={styles.buttonFacebookStyle}>
+              <View>
+                <Image
+                  source={require("../assets/facebook.png")}
+                  style={styles.butttonImageIconStyle}
+                />
+              </View>
+              <Separtor />
+              <Text style={styles.buttonTextStyle}>Login Using Facebook</Text>
             </View>
-            <Separtor />
-            <Text style={styles.buttonTextStyle}>Login Using Facebook</Text>
-          </View>
-        </TouchableOpacity>
-      </View>
-      <View style={styles.buttonContainer}>
-        <TouchableOpacity>
-          <View style={styles.buttonGPlusStyle}>
-            <View>
-              <Image
-                source={require("../assets/google-plus.png")}
-                style={styles.butttonImageIconStyle}
-              />
+          </TouchableOpacity>
+        </View>
+        <View>
+          <TouchableOpacity>
+            <View style={styles.buttonGPlusStyle}>
+              <View>
+                <Image
+                  source={require("../assets/google-plus.png")}
+                  style={styles.butttonImageIconStyle}
+                />
+              </View>
+              <Separtor />
+              <Text style={styles.buttonTextStyle}>
+                Login Using Google Plusk
+              </Text>
             </View>
-            <Separtor/>
-            <Text style={styles.buttonTextStyle}>Login Using Google Plusk</Text>
-          </View>
-        </TouchableOpacity>
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   );
@@ -46,9 +50,12 @@ const styles = StyleSheet.create({
     margin: 10,
     marginTop: 30,
     padding: 30,
+    alignItems: "center",
+    justifyContent: "center",
   },
-  buttonContainer: {
+  ContainerSize: {
     width: 400,
+    // backgroundColor: '#333'
   },
   buttonGPlusStyle: {
     flexDirection: "row",
