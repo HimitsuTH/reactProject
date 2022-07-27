@@ -12,6 +12,7 @@ const UserNamePassword = () => {
       else if (!password) alert("Please Enter Password");
       else alert(`Email : ${email}\n Password : ${password}`);
 
+      // alert("Email" + { email } + '\nPassword : ' + {password});
      
     }
 
