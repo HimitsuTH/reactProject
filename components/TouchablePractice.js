@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, TouchableOpacity, Image } from "react-native";
 import React from "react";
 
-const Separtor = () => <View style={styles.buttonIconSepartorStyle}></View>;
+const Separtor = () => <View style={styles.buttonIconSepartorStyle}/>;
 
 const TouchablePractice = () => {
   return (
