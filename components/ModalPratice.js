@@ -34,7 +34,7 @@ const ModalPratice = () => {
         </View>
       </Modal>
       <View style={styles.modalView}>
-        <Text>ไฟในห้องปิดอยู่</Text>
+        <Text style={styles.textSty}>ไฟในห้องปิดอยู่</Text>
         <Button
           title="กรุณากดปุ่มเพื่อปิดไฟ"
           color="#b40000"
@@ -72,6 +72,7 @@ const styles = StyleSheet.create({
     // color: "#fff",
     fontWeight: "bold",
     textAlign: "center",
+    marginBottom: 10,
   },
   modalText: {
     marginBottom: 15,
