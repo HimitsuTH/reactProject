@@ -5,39 +5,39 @@ import {
   Modal,
   SafeAreaView,
   Button,
-  Alert
+  Alert,
 } from "react-native";
 import React, { useState } from "react";
 
 const ModalPratice = () => {
   const [showModal, setShowModal] = useState(false);
 
-  
-
   return (
-    <SafeAreaView style={{flex: 1 , justifyContent: 'center', alignItems: 'center'}}>
+    <SafeAreaView
+      style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
+    >
       <Modal
         animationType="slide"
         transparent={false}
         visible={showModal}
         onRequestClose={() => alert("modal")}
       >
-        <View style={styles.container}>
-        <Text style={styles.textSty}>คุณลืมปิดไฟในห้อง!!!</Text>
-          <View>
+        <View style={[styles.container, styles.modalBg]}>
+          <View style={styles.modalView}>
+            <Text style={styles.textSty}>คุณลืมปิดไฟในห้อง!!!</Text>
             <Button
-              title="กรุณากดปุ่มเพื่อปิดไฟ"
-              color="#2196F3"
+              title="กรุณากดปุ่มเพื่อเปิดไฟอีกครั้ง"
+              color="#b40000"
               onPress={() => setShowModal(!showModal)}
             />
           </View>
         </View>
       </Modal>
-      <View style={styles.modalView}>
+      <View style={styles.container}>
         <Text style={styles.textSty}>ไฟในห้องปิดอยู่</Text>
         <Button
           title="กรุณากดปุ่มเพื่อปิดไฟ"
-          color="#b40000"
+          color="#2196F3"
           onPress={() => setShowModal(!showModal)}
         />
       </View>
@@ -52,6 +52,9 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
+  },
+  modalBg: {
+    backgroundColor: '#eee'
   },
   modalView: {
     margin: 20,
